@@ -5,7 +5,7 @@ This repo is intended to be used as supplementary learning material to accompany
 
 ## To run locally:
 
-* Git clone
+* git clone
 * bundle install
 * rails s
 
