@@ -7,9 +7,10 @@ This repo is intended to be used as supplementary learning material to accompany
 
 * git clone
 * bundle install
+* rake db:migrate
+* Seed some data into your database
 * rails s
-
-That's it.
+* Visit http://localhost/movies
 
 ### What should I know about this code that wasn't mentioned in your blog?
 * Because I host my search classes in `/app/searches`, I added that directory to the application's `autoload_paths` configuration, which can be found in `/config/application.rb`. 
