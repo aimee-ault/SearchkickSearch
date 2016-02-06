@@ -15,5 +15,6 @@ This repo is intended to be used as supplementary learning material to accompany
 
 ### What should I know about this code that wasn't mentioned in your blog?
 * Because I host my search classes in `/app/searches`, I added that directory to the application's `autoload_paths` configuration, which can be found in `/config/application.rb`. If you choose to place classes outside of the conventional MVC paths Rails uses, you should be mindful of this, otherwise you will need to explicitly include your classes where they are used.
-* This application currently lacks tests entirely! I know, it's a travesty. If you would like to contribute tests, I'd be super appreciative. I recommended rspec or minitest for doing so. 
+* This application currently lacks tests entirely! I know, it's a travesty. If you would like to contribute tests, I'd be super appreciative. I recommend rspec or minitest for doing so. 
 * I am very open to any contributions to this educational demo! Please feel free to fork and submit a pull request. I'll likely update my blog post and give you credit and a link back to your Github profile or your own website if so.
+* To keep things focused solely on the capabilities of Searchkick and Elasticsearch, I kept the search views very, very basic. No fancy UX or Javascript, just some simple forms. Obviously, you can do some pretty slick search UX if you put a bit more effort in here.
