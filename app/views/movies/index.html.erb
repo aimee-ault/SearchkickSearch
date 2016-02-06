@@ -1,0 +1,38 @@
+<%= form_tag movies_path, method: :get, role: "search" do |f| %>
+  <fieldset>
+    <label>Search for a movie:</label>
+    <%= search_field_tag "q", params[:q] %>
+  </fieldset>
+  <fieldset>
+    <label>Sort by:</label>
+    <%= select_tag "sort_attribute", options_for_select({"Title" => "title", "Genre" => "genre", "Release Date" => "release_date"}, params[:sort_attribute]), include_blank: true %>
+    <%= select_tag "sort_order", options_for_select({"Ascending" => "asc", "Descending" => "desc"}, params[:sort_order]), include_blank: true %>
+  </fieldset>
+  <fieldset>
+      <label>Filter by genre:</label>
+      <%= select_tag "genre", options_for_select(Movie.pluck("genre").uniq, params[:genre]), include_blank: true %>
+  </fieldset>
+  <fieldset>
+    <%= submit_tag "Search" %>
+    <%= submit_tag "Reset", type: :reset %>
+  </fieldset>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Release Date</th>
+    </tr>
+  <thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+    <tr>
+      <td><%= movie.title %></td>
+      <td><%= movie.genre %></td>
+      <td><%= movie.release_date.strftime("%d/%m/%Y") %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
