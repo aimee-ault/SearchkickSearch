@@ -5,6 +5,6 @@ class MoviesController < ApplicationController
   end
 
   def search_params
-    params.permit :page, :sort_attribute, :sort_order, :genre
+    params.permit :page, :per_page, :sort_attribute, :sort_order, :genre
   end
 end
