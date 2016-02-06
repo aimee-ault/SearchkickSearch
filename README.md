@@ -8,7 +8,7 @@ This repo is intended to be used as supplementary learning material to accompany
 * git clone
 * bundle install
 * rake db:migrate
-* Seed some data into your database
+* rake db:seed
 * rails s
 * Visit http://localhost/movies
 
