@@ -5,7 +5,8 @@ This repo is intended to be used as supplementary learning material to accompany
 
 ## To run locally:
 
-* git clone
+* git clone https://github.com/aimee-ault/SearchkickSearch.git
+* cd SearchkickSearch
 * bundle install
 * rake db:migrate
 * rake db:seed
