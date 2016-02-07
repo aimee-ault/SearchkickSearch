@@ -15,6 +15,5 @@ class Movie < ActiveRecord::Base
     end
 
     attrs.merge! relational
-    attrs
   end
 end
