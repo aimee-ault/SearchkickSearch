@@ -1,7 +1,7 @@
 # README
 
 This repo is intended to be used as supplementary learning material to accompany a blog post on my website titled 
-["How to Use Searchkick and ElasticSearch in Your Rails App For Complex Search Indexing"](http://aimeeault.com/2016/02/05/how-to-use-searchkick-and-elasticsearch-in-your-rails-app-for-complex-search-indexing/).
+["How to Use Searchkick and ElasticSearch in Your Rails App For Complex Search Indexing"](http://aimeeault.com//development/2016/02/05/how-to-use-searchkick-and-elasticsearch-in-your-rails-app.html).
 
 ## To run locally:
 
